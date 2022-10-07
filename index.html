@@ -48,46 +48,7 @@
         </div>
       </div>
       
-      <script>
-        
-      const calcy = () =>{
-        let TOC= document.getElementById('toc').value;
-        let DBMS = document.getElementById('dbms').value;
-        let IWT = document.getElementById('iwt').value;
-        let CYBER = document.getElementById('cyber').value;
-        let grades = "";
-      
-      
-        let totalGrades = parseFloat(TOC) + parseFloat(DBMS) + parseFloat(IWT) + parseFloat(CYBER);
-        
-      
-        let perc = (totalGrades/80) * 100;
-        
-      
-       
-      
-        if(perc <= 100  && perc >= 80){
-          grades = 'A';
-        }else if(perc <= 79  && perc >= 60){
-           grades = 'B';
-        }else if(perc <= 59  && perc >= 40){
-           grades = 'C';
-        }else{
-           grades = 'F';
-        }
-      
-        if(perc >= 39.5){
-          document.getElementById('showData').innerHTML = ` Out of 80 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. `
-        }
-        else{
-          document.getElementById('showData').innerHTML = ` Out of 80 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. `
-        }
-      
-        
-      }
-      
-      
-      </script>
+      <script src="script.js"></script>
       
 </body>
 </html>
